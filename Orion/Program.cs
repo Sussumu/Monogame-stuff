@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Engine;
+using System;
 
-namespace BattleRoyale
+namespace Orion
 {
     /// <summary>
     /// The main class.
@@ -13,7 +14,7 @@ namespace BattleRoyale
         [STAThread]
         static void Main()
         {
-            using (var game = new Game1())
+            using (var game = new Game())
                 game.Run();
         }
     }
